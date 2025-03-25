@@ -61,9 +61,11 @@ public class SList<E extends Comparable<E>>{
     // TODO 202202590 박종현 delete 메서드 제출
     public void delete(E target){
         if(size == 0) throw new NoSuchElementException();
+
         Node cur = head;
-        while (cur != null && cur != target) {
-            if (cur == target) {
+        if (cur.getItem() == target) {deleteFront(); return;}
+        while (cur != null && cur.getItem() != target) {
+            if (cur.getNext().getItem() == target) {
                 deleteAfter(cur);
                 return;
             }

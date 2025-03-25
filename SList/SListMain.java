@@ -9,5 +9,8 @@ public class SListMain{
         s.insertFront("pear");
 
         s.print();
+
+        s.delete("orange");
+        s.print();
     }
 }
