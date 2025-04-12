@@ -1,6 +1,6 @@
 public class QueueMain {
     public static void main(String args[]) {
-        Queue q = new Queue();
+        ArrQueue<String> q = new ArrQueue();
         String[] strs = {"Apple", "Orange", "Grape", "Pear", "Cherry", "Melon", "Banana"};
 
         q.add("Apple");

@@ -1,10 +1,10 @@
 import java.util.NoSuchElementException;
 
-public class Queue<E> {
+public class ArrQueue<E> {
     private E[] queue;
     private int front, rear, size;
 
-    public Queue() {
+    public ArrQueue() {
         queue = (E[]) new Object[2];
         front = 0;
         rear = 1;
